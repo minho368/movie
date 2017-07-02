@@ -1,0 +1,7 @@
+<form action="search" method="get">
+    <input type="text" name="input_content">
+    <input type="submit" value="검색">
+</form>
+<% @movie.each_with_index do |x, i|%>
+    <p><a href="http://www.cine21.com/<%= @movieinfo[i]%>"><%= x %></a></p>
+<% end %>
